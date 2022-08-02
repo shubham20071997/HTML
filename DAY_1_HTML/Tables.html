@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse; /*Border collapse property*/
+      width: 100%;
+    }
+
+    th,
+    td {
+      border: 1px solid #dddddd; /*Adding table border*/
+      text-align: center;
+      padding: 8px;
+    }
+
+    tr:hover {
+      background-color: #d6eeee;
+    } /*Hoverable Table*/
+  </style>
+
+  <body>
+    <h2>HTML Table</h2>
+
+    <table>
+      <!-- Adding Caption -->
+      <caption>
+        Business related information
+      </caption>
+      <!-- adding colgroup -->
+      <colgroup>
+        <col span="1" style="background-color: #d6eeee" />
+      </colgroup>
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds</td>
+        <td>Maria</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro</td>
+        <td>Francisco</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Ernst</td>
+        <td>Roland</td>
+        <td>Austria</td>
+      </tr>
+    </table>
+
+    <!-- Vertical table headers -->
+
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <td>Jill</td>
+        <td>Eve</td>
+      </tr>
+      <tr>
+        <th>Lastname</th>
+        <td>Smith</td>
+        <td>Jackson</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>94</td>
+        <td>50</td>
+      </tr>
+    </table>
+  </body>
+</html>
