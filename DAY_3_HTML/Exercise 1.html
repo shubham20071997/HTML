@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating A Form</title>
+</head>
+<body>
+   
+  <form action="/action_page.php">
+    <fieldset>
+    <h2>EDUCATION APPOINTMENT FORM</h2>
+    <label for="Title">Title:</label>
+    <select id="Title" name="Title">
+      <option value="Mr">Mr</option>
+      <option value="Mrs">Mrs</option>
+    </select><hr>
+    <input type="text" id="Your Name" name="Your Name" placeholder="Your Name" required><hr>
+    <input type="email" id="email" name="email" placeholder="Email"><hr>
+    <input type="tel" id="phone" name="phone" placeholder="Phone number" required><hr>
+    <label for="Course Type">Course Type:</label>
+    <select id="Course Type" name="Course Type">
+      <option value="volvo">Full time</option>
+      <option value="saab">Part time</option>
+    </select><hr>
+    <h3>How would you like to be Loacted ?</h3>
+    <label for="By Phone">By Phone:</label>
+    <select id="By Phone" name="By Phone">
+      <option value="volvo">By Email</option>
+      <option value="saab">By Phone</option>
+    </select><hr>
+    <label for="appt">Select a time:</label>
+    <input type="time" id="appt" name="appt"><hr><br><br>
+    <input type="checkbox" id="Terms & Conditions" name="Terms & Conditions"/>
+    <label for="vehicle1">I agree to the <b><ins>Terms & Conditions</ins></b></label><br><br><br>
+    <input type="submit" value="Request an appointment"/>
+  </fieldset>
+  </form>
+    
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
