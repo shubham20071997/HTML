@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+
+  <body>
+    <h2>HTML Forms</h2>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="Shubham" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Maurya" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      If you click the "Submit" button, the form-data will be sent to a page
+      called "/action_page.php".
+    </p>
+
+    <h2>Radio Buttons</h2>
+
+    <p>Choose your favorite Web language:</p>
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML" />  
+      <label for="html">HTML</label><br />
+        <input type="radio" id="css" name="fav_language" value="CSS" />  
+      <label for="css">CSS</label><br />
+       <input
+        type="radio"
+        id="javascript"
+        name="fav_language"
+        value="JavaScript"
+      />
+        <label for="javascript">JavaScript</label>
+    </form>
+    <br /><br />
+
+    <h2>Checkboxes</h2>
+    <form>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+      <label for="vehicle1"> I have a bike</label><br />
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+      <label for="vehicle2"> I have a car</label><br />
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+      <label for="vehicle3"> I have a boat</label>
+    </form>
+
+    <!-- HTML Form Attributes -->
+    action -Specifies where to send the form-data when a form is submitted
+    autocomplete -Specifies whether a form should have autocomplete on or off
+    <br /><br />
+
+    <!-- HTML Form Elements -->
+    <!-- The <select> Element -->
+    <form action="/action_page.php">
+      <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <input type="submit" />
+    </form>
+    <br /><br />
+
+    <!-- The <textarea> Element -->
+    <textarea name="message" rows="10" cols="30">
+        The cat was playing in the garden.
+        </textarea
+    ><br /><br />
+
+    <form action="/action_page.php">
+      <fieldset>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="John" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <br /><br />
+
+    <!-- The <datalist> Element -->
+    <form action="/action_page.php">
+      <input list="browsers" name="browser" />
+      <datalist id="browsers">
+        <option value="Internet Explorer"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
+      <input type="submit" />
+    </form>
+    <br /><br />
+
+    <!-- HTML Input Types -->
+    <!-- Creating user name and Password -->
+    <form action="/action_page.php">
+      <label for="username">Username:</label><br />
+      <input type="text" id="username" name="username" /><br />
+      <label for="pwd">Password:</label><br />
+      <input type="password" id="pwd" name="pwd" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <br /><br />
+
+    <!-- submit and reset button in forms -->
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="reset" />
+    </form>
+    <br /><br />
+
+    <!-- adding date field in form -->
+    <form action="/action_page.php">
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday" />
+      <input type="submit" value="Submit" />
+    </form>
+    <br /><br />
+
+    <!-- Date Field Restrictions -->
+    <form action="/action_page.php">
+      <label for="datemin">Enter a date after 2000-01-01:</label>
+      <input
+        type="date"
+        id="datemin"
+        name="datemin"
+        min="2000-01-02"
+      /><br /><br />
+      <label for="datemax">Enter a date before 1980-01-01:</label>
+      <input
+        type="date"
+        id="datemax"
+        name="datemax"
+        max="1979-12-31"
+      /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <br /><br />
+
+    <!-- addition of email field in the form -->
+    <form action="/action_page.php">
+      <label for="email">Enter your email:</label>
+      <input type="email" id="email" name="email" />
+      <input type="submit" value="Submit" />
+    </form>
+    <br /><br />
+
+    <!-- File upload section -->
+    <form>
+      <label for="myfile">Select a file:</label>
+      <input type="file" id="myfile" name="myfile" />
+    </form>
+    <br /><br />
+
+    <!-- adding the number field in the form -->
+    <form action="/action_page.php">
+      <label for="quantity">Number(between 1 and 5):</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="5" />
+      <input type="submit" value="Submit" />
+    </form>
+    <br /><br />
+
+    <!-- adding range field in the form -->
+    <form>
+      <label for="vol">Value (between 0 and 50):</label>
+      <input type="range" id="vol" name="vol" min="0" max="50" />
+    </form>
+    <br /><br />
+
+    <!-- adding search button in the form -->
+    <form action="/action_page.php">
+      <label for="gsearch">Search Google:</label>
+      <input type="search" id="gsearch" name="gsearch" />
+      <input type="submit" value="Submit" />
+    </form><br><br>
+
+    <!-- adding phone number field in the form -->
+    <form action="/action_page.php">
+      <label for="phone">Enter a phone number:</label><br /><br />
+      <input
+        type="tel" id="phone" name="phone" placeholder="0123456789" required
+      /><br /><br />
+      <input type="submit" value="Submit" />
+    </form><br><br>
+
+    <!-- Input Restrictions -->
+    <!-- The maxlength restriction Attribute -->
+    <form action="/action_page.php">
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
